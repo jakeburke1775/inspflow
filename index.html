@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vdara Inspections</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="heading">Vdara Permits</h1>
+      <p class="heading__caption">
+        Click the lot number, permit number or address to copy the permit number
+        to the clipboard and enter the portal.
+      </p>
+    </header>
+    <section class="data">
+      <table class="data__table" border="1">
+        <tr class="data__label-row">
+          <th class="data__label-column">Lot#</th>
+          <th class="data__label-column">perm#</th>
+          <th class="data__label-column">address</th>
+        </tr>
+        <template class="template">
+          <tr class="temp__row">
+            <td class="temp__lot"><a href="#" class="lot-link"></a></td>
+            <td class="temp__perm"><a href="#" class="perm-link"></a></td>
+            <td class="temp__add"><a href="#" class="add-link"></a></td>
+          </tr>
+        </template>
+      </table>
+    </section>
+    <script defer src="./scripts/lots.js"></script>
+    <script defer src="./scripts/renderdata.js"></script>
+    <script defer src="./scripts/copyNdirect.js"></script>
+  </body>
+</html>

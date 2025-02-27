@@ -1,0 +1,54 @@
+.heading {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.heading__caption {
+  font-family: sans-serif;
+  margin: auto;
+  width: 70%;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.data__table {
+  width: 100%;
+  max-width: 700px;
+}
+
+.data__label-row {
+  text-decoration: bold;
+}
+
+.temp__row {
+}
+
+.temp__lot {
+  text-align: right;
+  padding-right: 16px;
+}
+
+.temp__perm {
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.temp__add {
+  padding-left: 16px;
+}
+
+.temp__row_gray {
+  background-color: rgba(50, 50, 50, 0.15);
+}
+
+.lot-link,
+.add-link,
+.perm-link {
+  text-decoration: none;
+  color: blue;
+}
