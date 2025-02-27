@@ -1,12 +1,26 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(200, 200, 200, 1) 100%
+  );
+}
+
+.header {
+  margin-bottom: 32px;
+}
 .heading {
   text-align: center;
   font-family: sans-serif;
 }
 
 .heading__caption {
+  text-align: center;
   font-family: sans-serif;
-  margin: auto;
-  width: 70%;
 }
 
 .data {
@@ -19,10 +33,20 @@
 .data__table {
   width: 100%;
   max-width: 700px;
+  border-radius: 4px;
+  border: 6px solid lightslategray;
+  box-shadow: 15px 15px 15px darkgrey;
 }
 
 .data__label-row {
   text-decoration: bold;
+  background-color: lightslategray;
+  color: white;
+}
+
+.data__label-column {
+  border-radius: 4px;
+  padding: 8px 4px;
 }
 
 .temp__row {
@@ -31,15 +55,18 @@
 .temp__lot {
   text-align: right;
   padding-right: 16px;
+  border-radius: 4px;
 }
 
 .temp__perm {
   text-align: center;
   padding: 8px 4px;
+  border-radius: 4px;
 }
 
 .temp__add {
-  padding-left: 16px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .temp__row_gray {
@@ -50,5 +77,5 @@
 .add-link,
 .perm-link {
   text-decoration: none;
-  color: blue;
+  color: navy;
 }
